@@ -1,0 +1,44 @@
+.main-container {
+  height: 100vh;
+}
+
+mat-toolbar {
+  background: cadetblue;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+}
+
+.spinner {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+
+  &-wrapper {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.mat-spinner {
+  ::ng-deep circle {
+    stroke: #201c2b;
+  }
+}
+
+.childComponent {
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .childComponent {
+    padding: 0 10px;
+  }
+}
